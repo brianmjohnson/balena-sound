@@ -1,4 +1,43 @@
 - commits:
+    - subject: 'meta: Use balenablocks images instead of balenaplayground'
+      hash: dbc6f642518d4571c98df3ea59ae73a7df76c7ba
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+  version: 3.1.1
+  date: 2020-09-17T13:37:49.658Z
+- commits:
+    - subject: Update link in docs section of README
+      hash: 248d7da67f6288fdd9694b5a0c109c5027f288c8
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Anuj Deshpande <anuj@balena.io>
+        signed-off-by: Anuj Deshpande <anuj@balena.io>
+      author: Anuj Deshpande
+      nested: []
+  version: 3.1.0
+  date: 2020-09-17T13:10:46.917Z
+- commits:
+    - subject: Update logo dir in README
+      hash: fc9a34142561871f8ca128ba72fc90e137b3c3c6
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Amit Solanki <amit@balena.io>
+        signed-off-by: Amit Solanki <amit@balena.io>
+      author: Amit Solanki
+      nested: []
+  version: 3.0.1
+  date: 2020-09-16T19:43:28.568Z
+- commits:
     - subject: 'balenaSound 3.0: use balena blocks'
       hash: 61e50b3831c5065e06898fc17390572a893cc6d8
       body: >
