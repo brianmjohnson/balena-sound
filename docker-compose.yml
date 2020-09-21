@@ -48,14 +48,14 @@ services:
       io.balena.features.dbus: 1
 
   airplay-zone-1:
-    build: ./plugins/airplay-zone-1
+    build: ./plugins/airplay_zone_1
     network_mode: bridge
     privileged: true
     labels:
       io.balena.features.dbus: 1
 
   airplay-zone-2:
-    build: ./plugins/airplay-zone-2
+    build: ./plugins/airplay_zone_2
     network_mode: bridge
     privileged: true
     labels:
