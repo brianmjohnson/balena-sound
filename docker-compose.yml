@@ -47,9 +47,16 @@ services:
     labels:
       io.balena.features.dbus: 1
 
-  airplay:
-    build: ./plugins/airplay
-    network_mode: host
+  airplay-zone-1:
+    build: ./plugins/airplay-zone-1
+    network_mode: bridge
+    privileged: true
+    labels:
+      io.balena.features.dbus: 1
+
+  airplay-zone-2:
+    build: ./plugins/airplay-zone-2
+    network_mode: bridge
     privileged: true
     labels:
       io.balena.features.dbus: 1
