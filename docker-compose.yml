@@ -53,6 +53,7 @@ services:
     privileged: true
     links:
       - "audio"
+      - "sound-supervisor"
     labels:
       io.balena.features.dbus: 1
 
@@ -62,6 +63,7 @@ services:
     privileged: true
     links:
       - "audio"
+      - "sound-supervisor"
     labels:
       io.balena.features.dbus: 1
 
