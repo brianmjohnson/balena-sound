@@ -61,7 +61,7 @@ services:
     build: ./plugins/airplay_zone_2
     network_mode: bridge
     privileged: true
-    depends_on::
+    depends_on:
       - "audio"
       - "sound-supervisor"
     labels:
