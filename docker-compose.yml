@@ -51,6 +51,8 @@ services:
     build: ./plugins/airplay_zone_1
     network_mode: bridge
     privileged: true
+    links:
+      - "audio"
     labels:
       io.balena.features.dbus: 1
 
@@ -58,6 +60,8 @@ services:
     build: ./plugins/airplay_zone_2
     network_mode: bridge
     privileged: true
+    links:
+      - "audio"
     labels:
       io.balena.features.dbus: 1
 
