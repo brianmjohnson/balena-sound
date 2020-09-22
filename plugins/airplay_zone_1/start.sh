@@ -17,10 +17,10 @@ echo "Device name: $SOUND_DEVICE_NAME"
 # See: https://github.com/mikebrady/shairport-sync/issues/1054
 # Remove when above issue is addressed
 #while [[ "$(curl --silent --head --output /dev/null --write-out '%{http_code}' --max-time 2000 'http://localhost:3000/audio')" != "200" ]]; do sleep 5; echo "Waiting for audioblock to start..."; done
-while [[ "$(curl --silent --head --output /dev/null --write-out '%{http_code}' --max-time 2000 'http://audio:3000/audio')" != "200" ]]; do sleep 5; echo "Waiting for audioblock to start..."; done
+while [[ "$(curl --silent --head --output /dev/null --write-out '%{http_code}' --max-time 2000 'http://$HOSTNAME:3000/audio')" != "200" ]]; do sleep 5; echo "Waiting for audioblock to start on ''$HOSTNAME'"; done
 
 # Start AirPlay
 exec shairport-sync \
   --name "$SOUND_DEVICE_NAME" \
   --output pa \
-  | echo "Shairport-sync started. Device is discoverable as $SOUND_DEVICE_NAME"
+  | echo "Shairport-sync started. Device is discoverable as '$SOUND_DEVICE_NAME'"
