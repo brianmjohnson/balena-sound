@@ -51,7 +51,7 @@ services:
     build: ./plugins/airplay_zone_1
     network_mode: bridge
     privileged: true
-    links:
+    depends_on:
       - "audio"
       - "sound-supervisor"
     labels:
@@ -61,7 +61,7 @@ services:
     build: ./plugins/airplay_zone_2
     network_mode: bridge
     privileged: true
-    links:
+    depends_on::
       - "audio"
       - "sound-supervisor"
     labels:
